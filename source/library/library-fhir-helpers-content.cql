@@ -6,9 +6,9 @@
  https://github.com/cqframework/clinical_quality_language/wiki/FHIRHelpers
 @allowFluent: true
 */
-library FHIRHelpers version '4.3.0-cibuild'
+library FHIRHelpers version '4.3.0-snapshot1'
 
-using FHIR version '4.3.0-cibuild'
+using FHIR version '4.3.0-snapshot1'
 
 define function ToInterval(period FHIR.Period):
     if period is null then

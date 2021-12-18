@@ -14,7 +14,10 @@
 <table class="colsi"><tr><td id="wg"><a _target="blank" href="[%wg fhir%]">[%wgt fhir%]</a> Work Group</td><td id="fmm"><a href="versions.html#maturity">Maturity Level</a>: N/A</td><td id="ballot"><a href="versions.html#std-process">Standards Status</a>:<!--!ns!--><a href="versions.html#std-process">Informative</a></td></tr></table>
 
 <p>
-Welcome to the FHIR R4B ballot.  This is a special, limited scope ballot in which most content remains strictly compatible with <a href="http://hl7.org/fhir/r4">R4</a>.  However, it advances and revamps a limited set of content to allow advancing the maturity level of this content faster than could be achieved by waiting for the next major release (R5), currently slated for final publication in spring of 2022.
+Welcome to the FHIR R4B Snapshot.  R4B is a special, limited scope specification in which most content remains strictly 
+compatible with <a href="http://hl7.org/fhir/r4">R4</a>.  However, it advances and revamps a limited set of 
+content to allow advancing the maturity level of this content faster than could be achieved by waiting for the 
+next major release (R5), currently slated for final publication towards the end of 2022.
 </p>
 <p>
 This resulting R4B release will be strictly backward compatible with R4, except as described in the changes listed below:
@@ -43,63 +46,12 @@ This resulting R4B release will be strictly backward compatible with R4, except 
   </li>
 </ul>
 
-<a name="status"> </a>
-<h3>Ballot statuses</h3>
-<p>
-All content within this specification falls under one of the following ballot statuses: 
-</p>
-<ul>
- <li><span style="background-color: #e6ffe6; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>Normative</b></span>: Content that is subject to normative ballot rules. Once passed, <a href="versions.html#change">strict rules</a> are imposed on future change to help ensure inter-version compatibility</li>
- <li><span style="background-color: #fff5e6; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>Trial Use</b></span>: Content that is undergoing <a href="versions.html#maturity">FHIR maturity Model</a> based testing. In a future ballot cycle, once sufficiently mature, it will be balloted as normative</li>
- <li><span style="background-color: #ffffe6; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>Informative</b></span>: Content that is advisory (e.g. implementers are not required to conform to the content), or navigational content - tables of contents, generated lists, etc.</li>
- <li><span style="background-color: #efefef; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>Draft</b></span>: Content added late in the balloting process that has no formal standing but is published for visibility. It might not be suitable for use in production systems.</li>
- <li><span style="background-color: #ffcccc; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>Deprecated</b></span>: Content that is in the process of being removed (see <a href="versions.html#deprecation">deprecation</a>).</li>
- <li><span style="background-color: #e6ffff; border: 1px grey solid; padding-left: 3px; padding-right: 3px;"><b>External</b></span>: Content that is replicated from external standards (e.g. HL7 v2, DICOM) and is not subject to ballot comment</li>
-</ul>
-
-<p>
-Note that this ballot is a Standard for Trial Use (STU) ballot.  Thus, all changes made to normative artifacts as part of this release, are considered as 'STU' until validated by normative ballot as part of R5.
-</p>
-
-<a name="process"> </a>
-<h3>Ballot process</h3>
-<p>
-This ballot will be the first HL7 ballot to trial HL7's new <a href="https://confluence.hl7.org/display/HL7/Jira+Ballot+Process">Jira balloting process</a>.  As such, ballot comments will need to be submitted in Jira and, in general, balloting spreadsheets will not be used.  Some organizational and affiliate balloters may continue to use spreadsheets but will be responsible for importing them into Jira themselves and may have slightly different processes for consolidating ballots to take that into account.  The ballot desktop will be used for voter registration but will not be available for vote submission.  Voters are encouraged to view the <a href="https://youtu.be/Qb-02MWgugM">recorded tutorial</a> on Jira balloting in addition to reading through the instructions on <a href="https://confluence.hl7.org/display/HL7/Specification+Feedback">submitting Jira feedback</a> and <a href="https://confluence.hl7.org/display/HL7/Jira+Ballot+Process">using Jira balloting</a>.  A webinar will be held part-way through the ballot cycle to provide an opportunity to ask questions about the process.  Questions can also be raised on the <a href="https://chat.fhir.org/#narrow/stream/184932-JIRA.2FConfluence">Jira/Confluence</a> stream on http://chat.fhir.org.
-</p>
-<p>
-Because this is a limited-scope ballot, votes can only be submitted on those resources and pages that fall within the scope of the ballot.  Specifically:
-</p>
-<ul>
-  <li><b>Resources:</b> AdministrableProductDefinition, Citation, ClinicalUseDefinition, Evidence, EvidenceReport, EvidenceVariable, Ingredient, ManufacturedItemDefinition, MedicinalProductDefinition, PackagedProductDefinition, RegulatedAuthorization, Substance, SubstanceDefinition</li>
-  <li><b>Pages:</b> (NA), (many), Ballot Intro, Clinical Reasoning Module, Datatypes, Downloads, Home (index), Medication Definition Module, Table of Contents (toc)</li>
-</ul>
-<p>
-All feedback related to this ballot must be submitted using the <a href="https://jira.hl7.org/browse/FHIR">FHIR Specification Feedback</a> Jira project and must reference one of the above resources or pages.  If commenting on a technical correction or non-substantive change made as part of this release that is relevant to a different artifact or page, simply list the "Ballot Intro" page as one of the relevant pages.
-</p>
-<p>
-If you have feedback about the FHIR core specification <i>NOT</i> related to the scope of this ballot, feel free to propose changes using Jira in the <a href="https://jira.hl7.org/browse/FHIR">usual manner</a> - just don't try to vote on them.  Note that comments about the FHIR core specification outside the scope of this ballot should ideally be based on the FHIR <a href="http://build.fhir.org">continuous integration build</a>, rather than on this R4B release snapshot.
-</p>
-<p>
-Because this is only an STU ballot, only one ballot cycle is anticipated, with final publication of R4B planned for late Q2 or sometime in Q3, 2021.
-</p>
-
-<a name="details"> </a>
-<h3>Change details</h3>
-<p>
-The detailed list of changes included in this specification is as follows:
-</p>
-
-<a name="ebm"></a>
-<h4>Evidence-Based Medicine (EBM) changes</h4>
-<p>
-The resources in this space were extremely draft when R4 was first published.  There has been no uptake of the resources as they were published.  The community has provided significant feedback, including connectathon work, and there is a desire by the community to have official 'Standard for Trial Use' releases of these resources.  The <a href="versions.html#maturity">maturity level</a> for the resources in this space have been increased to '1'.  Changes are as follows:
-</p>
-<ul>
-  <li>Significantly revamped the design of the <a href="evidence.html">Evidence</a> and <a href="evidencevariable.html">EvidenceVariable</a> resources</li>
-  <li>Added the <a href="citation.html">Citation</a> and <a href="evidencereport.html">EvidenceReport</a> resources</li>
-  <li>Removed the EffectEvidenceSynthesis and RiskEvidenceSynthesis resources</li>
-</ul>
-
+<blockquote class="stu-note">
+  <p>
+    The rest of this page has not been updated for changes since R4B was balloted.
+    it will be updated and moved to the specification before R4B is published.
+  </p>
+</blockquote>
 <a name="meddef"></a>
 <h4>Medication Definition changes</h4>
 <p>
