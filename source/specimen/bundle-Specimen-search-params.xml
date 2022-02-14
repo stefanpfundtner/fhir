@@ -85,19 +85,19 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Specimen-container"/>
+        <id value="Specimen-container-device-deviceName"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="Specimen.container.type"/>
+          <valueString value="Specimen.container.device.deviceName"/>
         </extension>
         <url value="http://hl7.org/fhir/build/SearchParameter/Specimen-container"/>
         <description value="The kind of specimen container"/>
         <code value="container"/>
         <type value="token"/>
-        <expression value="Specimen.container.type"/>
-        <xpath value="f:Specimen/f:container/f:type"/>
+        <expression value="Specimen.container.device.deviceName"/>
+        <xpath value="f:Specimen/f:container/f:type/f:device/f:deviceName"/>
         <xpathUsage value="normal"/>
       </SearchParameter>
     </resource>
@@ -105,19 +105,19 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Specimen-container-id"/>
+        <id value="Specimen-container-device-id"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="Specimen.container.identifier"/>
+          <valueString value="Specimen.container.device.identifier"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Specimen-container-id"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/Specimen-container-device-id"/>
         <description value="The unique identifier associated with the specimen container"/>
-        <code value="container-id"/>
+        <code value="container-device-id"/>
         <type value="token"/>
-        <expression value="Specimen.container.identifier"/>
-        <xpath value="f:Specimen/f:container/f:identifier"/>
+        <expression value="Specimen.container.device.identifier"/>
+        <xpath value="f:Specimen/f:container/f:device/f:identifier"/>
         <xpathUsage value="normal"/>
       </SearchParameter>
     </resource>
